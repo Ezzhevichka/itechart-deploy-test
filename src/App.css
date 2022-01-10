@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+    font-family: Triak;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #287bff;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 850px;
+    padding: 30px;
+    background-color: #fff;
+}
+
+section h1 {
+    text-align: center;
+}
+
+section ul input {
+    width: 200px;
+}
+
+section:last-child span {
+    margin-top: 15px;
+    align-self: center;
+}
+
+section:first-child input {
+    max-width: 650px;
+    height: 20px;
+}
+
+section p {
+    max-width: 700px;
+}
+
+section button {
+    align-self: center;
+    justify-self: center;
+    width: 250px;
+    height: 40px;
+}
+
+ul li::first-letter {
+    font-size: 20px;
+    text-transform: uppercase;
+}
