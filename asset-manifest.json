@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/iTechArt-deploy-test/static/css/main.8779459b.css",
-    "main.js": "/iTechArt-deploy-test/static/js/main.6d9893be.js",
-    "index.html": "/iTechArt-deploy-test/index.html",
-    "main.8779459b.css.map": "/iTechArt-deploy-test/static/css/main.8779459b.css.map",
-    "main.6d9893be.js.map": "/iTechArt-deploy-test/static/js/main.6d9893be.js.map"
+    "main.css": "/itechart-deploy-test/static/css/main.8779459b.css",
+    "main.js": "/itechart-deploy-test/static/js/main.6d9893be.js",
+    "index.html": "/itechart-deploy-test/index.html",
+    "main.8779459b.css.map": "/itechart-deploy-test/static/css/main.8779459b.css.map",
+    "main.6d9893be.js.map": "/itechart-deploy-test/static/js/main.6d9893be.js.map"
   },
   "entrypoints": [
     "static/css/main.8779459b.css",
