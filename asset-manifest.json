@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/iTechArt_deploy_test/static/css/main.8701a2ed.css",
+    "main.js": "/iTechArt_deploy_test/static/js/main.6d9893be.js",
+    "index.html": "/iTechArt_deploy_test/index.html",
+    "main.8701a2ed.css.map": "/iTechArt_deploy_test/static/css/main.8701a2ed.css.map",
+    "main.6d9893be.js.map": "/iTechArt_deploy_test/static/js/main.6d9893be.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8701a2ed.css",
+    "static/js/main.6d9893be.js"
+  ]
+}
