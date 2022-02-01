@@ -30,6 +30,17 @@ header #name {
 
 header p {
     font-size: 16px;
+    font-style: italic;
+    margin-left: 16px;
+    max-width: 800px;
+}
+
+header div {
+    margin-left: 16px;
+}
+
+header div label {
+    margin-left: 16px;
 }
 
 body {
@@ -68,6 +79,7 @@ footer {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     margin-top: 12px;
+    outline: 1px solid #2a2a72;
 }
 
 footer p {
@@ -77,7 +89,7 @@ footer p {
 }
 
 #question {
-    height: 400px;
+    height: 412px;
     width: 864px;
     outline: 1px solid #2a2a72;
     border-top-left-radius: 10px;
@@ -111,7 +123,7 @@ footer p {
     display: flex;
     flex-direction: column;
     width: 852px;
-    height: 252px;
+    height: 232px;
     margin-top: 10px;
     margin-left: 12px;
 }
@@ -125,8 +137,8 @@ footer p {
 
 #variants #list div #input {
     width: 64px;
-    height: 16px;
-    font-size: 16px;
+    height: 12px;
+    font-size: 18px;
     text-align: right;
 }
 
@@ -149,19 +161,36 @@ footer p {
     border-bottom-right-radius: 10px;
     padding: 8px;
     width: 864px;
+    display: flex;
+    flex-direction: column;
+    outline: 1px solid #2a2a72;
 }
 
-#total_ul li {
-    padding: 4px;
+#total_div h2 {
+    align-self: center;
+    border-bottom: 1px solid #000;
 }
 
 #total {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    width: 864px;
+}
+
+#table {
+    width: 354px;
+    align-self: center;
+    margin-bottom: 16px;
+}
+
+#charts {
+    margin-top: 24px;
+    width: 864px;
 }
 
 #error {
     background-color: #720000;
     color: #ffe8e8;
+    max-width: 764px;
+    margin-left: 16px;
+    margin-bottom: 16px;
 }

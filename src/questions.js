@@ -9,6 +9,7 @@ export default function Questions() {
     const [rest, setRest] = useState(0);
     const [points, setPoints] = useState(null);
     const [hasError, checkHasError] = useState(false);
+
     return (
         <section>
             {
@@ -26,7 +27,7 @@ export default function Questions() {
                                 <Stack spacing={1} id="list">
                                     {ind.cases.map(k => {
                                         return (
-                                            <div>
+                                            <div key={k.category}>
                                                 <span id="list_item">{k.question}</span>
                                                 <TextField id="input" label="Баллы" variant="filled" min="0" max="11" type="number"
                                                     onChange={(event) => {
@@ -35,7 +36,8 @@ export default function Questions() {
                                                             (event.target.value < 0 ? event.target.value = k.points = 0 :
                                                                 k.points = +event.target.value
                                                             )));
-                                                        checkHasError(setRest(getRest(ind)));
+                                                        setRest(getRest(ind));
+                                                        checkHasError(ind.error);
                                                     }}
                                                 />
                                             </div>
@@ -47,7 +49,7 @@ export default function Questions() {
                     )
                 })
             }
-            <Button variant='contained' id='button' onClick={() => { checkHasError(setPoints(getSums(data))) }}>Рассчитать данные</Button>
+            <Button variant='contained' id='button' onClick={() => { setPoints(getSums(data)); checkHasError(getSums(data)) }}>Рассчитать данные</Button>
             <Total points={points} />
         </section>
     )

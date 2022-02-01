@@ -19,8 +19,6 @@ function getSums(x) {
             element.scrollIntoView({ block: "center", behavior: "smooth" });
             element.style.color = "#a50000";
             x[i].error = true;
-        } else {
-            x[i].error = false;
         }
     };
 
@@ -33,7 +31,6 @@ function getSums(x) {
     if (points.flat().reduce((a, b) => a + b) !== 363) {
         return null;
     } else {
-        console.log(points.flat().reduce((a, b) => a + b))
         return points;
     }
 };
@@ -194,16 +191,18 @@ function getRest(x) {
         };
     });
 
-    let element = document.getElementById(x.id);
-
     if (rest === 0) {
-        element.style.color = '#000';
+        let element = document.getElementById(x.id);
+        element.style.color = '#000'
         x.error = false;
-    } else {
-        return null;
     }
 
     return rest;
 };
 
-export { getSums, getData, getPolarData, getRest };
+function getRows(x, y, z) {
+    const rows = x.map((el, i) => z(x[i], y[i].reduce((a, b) => a + b)));
+    return rows;
+}
+
+export { getSums, getData, getPolarData, getRest, getRows };
