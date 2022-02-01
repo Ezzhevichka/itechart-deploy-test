@@ -15,11 +15,12 @@ function getSums(x) {
 
         let element = document.getElementById(x[i].id);
 
-        if (sum > 11 || sum < 11) {
+        if (sum !== 11) {
             element.scrollIntoView({ block: "center", behavior: "smooth" });
-            element.style.color = "red";
+            element.style.color = "#a50000";
+            x[i].error = true;
         } else {
-            element.style.color = "black";
+            x[i].error = false;
         }
     };
 
@@ -29,10 +30,10 @@ function getSums(x) {
         points.push(arr.filter(el => el.category === i).map(el => el.points));
     };
 
-    if (points.flat().reduce((a, b) => a + b) < 363 || points.flat().reduce((a, b) => a + b) > 363) {
-        console.log(points.flat().reduce((a, b) => a + b))
+    if (points.flat().reduce((a, b) => a + b) !== 363) {
         return null;
     } else {
+        console.log(points.flat().reduce((a, b) => a + b))
         return points;
     }
 };
@@ -67,6 +68,7 @@ function getData(x, y) {
         series: [{
             name: 'Баллы',
             data: [],
+            color: '#0093e9',
             dataLabels: {
                 enabled: true,
                 rotation: -90,
@@ -169,8 +171,9 @@ function getPolarData(x, y) {
 
         series: [{
             type: 'area',
-            name: 'Количество баллов',
+            name: 'Баллы',
             data: [],
+            color: '#0093e9'
         }]
     };
     options.series[0].data = x.map((el, i) => [y[i], x[i].reduce((a, b) => a + b)]);
@@ -190,6 +193,16 @@ function getRest(x) {
             return a + b;
         };
     });
+
+    let element = document.getElementById(x.id);
+
+    if (rest === 0) {
+        element.style.color = '#000';
+        x.error = false;
+    } else {
+        return null;
+    }
+
     return rest;
 };
 

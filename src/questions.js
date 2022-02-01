@@ -1,35 +1,54 @@
 import React, { useState } from 'react';
 import { data } from './data';
-import { getRest } from './func'
+import { getSums, getRest } from './func';
+import { Button, TextField, Alert, AlertTitle, Stack} from '@mui/material';
+import Total from './total';
 
 export default function Questions() {
     const [value, setValue] = useState(0);
     const [rest, setRest] = useState(0);
+    const [points, setPoints] = useState(null);
+    const [hasError, checkHasError] = useState(false);
     return (
         <section>
             {
                 data.map(ind => {
                     return (
-                        <div key={ind.id}>
+                        <div key={ind.id} id="question">
                             <h2 id={ind.id}>{ind.id}. {ind.title}</h2>
-                            <h3>{ind.total === undefined ? 11 : ind.total}</h3>
-                            {ind.cases.map(k => {
-                                return (
-                                    <div id={ind.id}>
-                                        <ul key={k.category}>
-                                            <li>{k.question}</li>
-                                            <input type="number" max="11" min="0" onChange={(event) => {
-                                                setValue(event.target.value > 11 ? event.target.value = k.points = 11 : k.points = +event.target.value);
-                                                setRest(getRest(ind));
-                                            }} />
-                                        </ul>
-                                    </div>
-                                )
-                            })}
+                            {ind.error ? 
+                            <Alert severity="error" id="error">
+                                <AlertTitle>Ошибка!</AlertTitle>
+                                Баллы распределены неверно — <strong>пожалуйста, проверьте свои значения</strong>
+                            </Alert> : null}
+                            <div id="variants">
+                                <h3>{ind.total === undefined ? 11 : ind.total}</h3>
+                                <Stack spacing={1} id="list">
+                                    {ind.cases.map(k => {
+                                        return (
+                                            <div>
+                                                <span id="list_item">{k.question}</span>
+                                                <TextField id="input" label="Баллы" variant="filled" min="0" max="11" type="number"
+                                                    onChange={(event) => {
+                                                        setValue((event.target.value > 11 ?
+                                                            event.target.value = k.points = 11 :
+                                                            (event.target.value < 0 ? event.target.value = k.points = 0 :
+                                                                k.points = +event.target.value
+                                                            )));
+                                                        checkHasError(setRest(getRest(ind)));
+                                                    }}
+                                                />
+                                            </div>
+                                        )
+                                    })}
+                                </Stack>
+                            </div>
                         </div>
                     )
                 })
             }
+            <Button variant='contained' id='button' onClick={() => { checkHasError(setPoints(getSums(data))) }}>Рассчитать данные</Button>
+            <Total points={points} />
         </section>
     )
 };

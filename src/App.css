@@ -1,43 +1,158 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-
-body {
-    font-family: Triak;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #287bff;
-}
-
 main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 850px;
-    padding: 30px;
-    background-color: #fff;
+    max-width: 864px;
+    padding: 32px;
 }
 
-main h1 {
+header {
+    background-color: #fffdfc;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 8px;
+    width: 864px;
+}
+
+header h1 {
     text-align: center;
+    font-size: 32px;
+    border-bottom: 1.5px solid #2a2a72;
+    margin-bottom: 32px;
 }
 
-main ul input {
-    width: 200px;
+header #name {
+    width: 356px;
+    font-size: 16px;
 }
 
-main:last-child span {
-    margin-top: 15px;
+header p {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2a2a72;
+    background-image: linear-gradient(115deg, #2a2a72 2%, #009ffd 75%);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+section #button {
+    background-color: #d64f00;
+    color: #fffffd;
+    text-align: center;
     align-self: center;
+    width: 252px;
+    height: 40px;
+    margin-top: 24px;
+    margin-bottom: 24px;
 }
 
-main:first-child input {
-    max-width: 650px;
-    height: 20px;
+footer {
+    text-align: center;
+    background-color: #fffdfc;
+    width: 864px;
+    padding: 8px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: 12px;
 }
 
-main p {
-    max-width: 700px;
+footer p {
+    font-size: 18px;
+    line-height: 1px;
+    font-style: italic;
+}
+
+#question {
+    height: 400px;
+    width: 864px;
+    outline: 1px solid #2a2a72;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: 16px;
+    padding: 8px;
+    background-color: #fffdfc;
+}
+
+#question h2 {
+    margin-left: 16px;
+}
+
+#variants {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#variants h3 {
+    width: 52px;
+    height: 52px;
+    margin-left: 16px;
+    font-size: 32px;
+    color: #a1a1a1;
+}
+
+#variants #list {
+    display: flex;
+    flex-direction: column;
+    width: 852px;
+    height: 252px;
+    margin-top: 10px;
+    margin-left: 12px;
+}
+
+#variants #list div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#variants #list div #input {
+    width: 64px;
+    height: 16px;
+    font-size: 16px;
+    text-align: right;
+}
+
+#list_item {
+    font-size: 18px;
+    margin-left: 16px;
+    width: 660px;
+}
+
+#list_item::first-letter {
+    text-transform: uppercase;
+}
+
+#total_div {
+    margin-top: 10px;
+    background-color: #fffdfc;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 8px;
+    width: 864px;
+}
+
+#total_ul li {
+    padding: 4px;
 }
 
 #total {
@@ -46,14 +161,7 @@ main p {
     justify-content: center;
 }
 
-#button {
-    align-self: center;
-    justify-self: center;
-    width: 250px;
-    height: 40px;
-}
-
-ul li::first-letter {
-    font-size: 20px;
-    text-transform: uppercase;
+#error {
+    background-color: #720000;
+    color: #ffe8e8;
 }
