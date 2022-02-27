@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { getData, getPolarData, getRows } from './func';
-import { categoryNames } from './data';
+import { getData, getPolarData, getRows } from '../../func';
+import { categoryNames } from '../../data';
 import Highcharts from 'highcharts/highstock';
 import HighchartsMore from 'highcharts/highcharts-more'
 import HighchartsReact from 'highcharts-react-official';

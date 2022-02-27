@@ -1,15 +1,9 @@
 import React from 'react';
-import Header from './header';
-import Questions from './questions';
-import Footer from './footer';
+import Routing from './Components/routng';
 
 function App() {
   return (
-    <main>
-      <Header />
-      <Questions />
-      <Footer />
-    </main>
+      <Routing />
   );
 }
 

@@ -1,3 +1,13 @@
+body {
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2a2a72;
+    background-image: linear-gradient(90deg, #2a2a72 2%, #009ffd 75%);
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -14,6 +24,8 @@ header {
     border-bottom-right-radius: 10px;
     padding: 8px;
     width: 864px;
+    outline: 1px solid #2a2a72;
+    box-shadow: 0 0 10px #000;
 }
 
 header h1 {
@@ -24,7 +36,7 @@ header h1 {
 }
 
 header #name {
-    width: 356px;
+    width: 760px;
     font-size: 16px;
 }
 
@@ -32,7 +44,7 @@ header p {
     font-size: 16px;
     font-style: italic;
     margin-left: 16px;
-    max-width: 800px;
+    max-width: 780px;
 }
 
 header div {
@@ -41,16 +53,6 @@ header div {
 
 header div label {
     margin-left: 16px;
-}
-
-body {
-    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #2a2a72;
-    background-image: linear-gradient(115deg, #2a2a72 2%, #009ffd 75%);
 }
 
 section {
@@ -80,6 +82,7 @@ footer {
     border-bottom-right-radius: 10px;
     margin-top: 12px;
     outline: 1px solid #2a2a72;
+    box-shadow: 0 0 10px #000;
 }
 
 footer p {
@@ -89,7 +92,6 @@ footer p {
 }
 
 #question {
-    height: 412px;
     width: 864px;
     outline: 1px solid #2a2a72;
     border-top-left-radius: 10px;
@@ -99,6 +101,7 @@ footer p {
     margin-top: 16px;
     padding: 8px;
     background-color: #fffdfc;
+    box-shadow: 0 0 10px #000;
 }
 
 #question h2 {
@@ -140,6 +143,7 @@ footer p {
     height: 12px;
     font-size: 18px;
     text-align: right;
+    
 }
 
 #list_item {

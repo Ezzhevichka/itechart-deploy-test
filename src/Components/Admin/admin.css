@@ -1,0 +1,179 @@
+#loginPage {
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loginBox {
+    outline: 1px solid #2a2a72;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 0 10px #000;
+}
+
+#sidebar {
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fffdfc;
+    margin-top: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 0 10px #000;
+    outline: 1px solid #2a2a72;
+    padding: 8px;
+}
+
+#signout {
+    width: 120px;
+    background-color: #2a2a72;
+}
+
+#mainPage {
+    display: flex;
+    width: 200vh;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#adminHeader {
+    padding: 8px;
+    margin: 0;
+    display: block;
+    width: 100%;
+}
+
+#adminTypography {
+    text-align: left;
+    padding: 4px;
+    margin-left: 24px;
+    border-bottom: none;
+    font-size: 24px;
+}
+
+#adminFooter {
+    width: 100%;
+    box-shadow: 0 0 10px #000;
+}
+
+#footerTypographySpan {
+    font-style: italic;
+}
+
+#adminsForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fffdfc;
+    width: 654px;
+    height: 354px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 0 10px #000;
+    outline: 1px solid #2a2a72;
+    padding: 8px;
+}
+
+#adminEmail {
+    width: 454px;
+}
+
+#adminsButton {
+    width: 454px;
+}
+
+#adminList {
+    background-color: #fffdfc;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 0 10px #000;
+    outline: 1px solid #2a2a72;
+    margin-top: 12px;
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#trashButton {
+    cursor: pointer;
+}
+
+#pages {
+    justify-self: center;
+    margin: auto;
+    margin-top: 40px;
+}
+
+#adminWrapper {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#employeeForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fffdfc;
+    width: 654px;
+    height: 354px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 0 10px #000;
+    outline: 1px solid #2a2a72;
+    padding: 8px;
+}
+
+#employeeEmail {
+    width: 454px;
+}
+
+#employeeName {
+    width: 454px;
+}
+
+#employeeButton {
+    width: 454px;
+}
+
+#employeeItem {
+    background-color: #fffdfc;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 0 10px #000;
+    outline: 1px solid #2a2a72;
+    margin-top: 12px;
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#navLink {
+    text-decoration: none;
+    color: #000;
+    width: 100%;
+    height: 100%;
+}
+
+.active {
+    color: #fffdfc;
+    border-bottom: 1px solid #2a2a72;
+}

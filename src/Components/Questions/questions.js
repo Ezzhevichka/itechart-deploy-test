@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { data } from './data';
-import { getSums, getRest } from './func';
+import { data } from '../../data';
+import { getSums, getRest } from '../../func';
 import { Button, TextField, Alert, AlertTitle, Stack} from '@mui/material';
-import Total from './total';
+import Total from '../Total/total';
 
 export default function Questions() {
     const [value, setValue] = useState(0);
