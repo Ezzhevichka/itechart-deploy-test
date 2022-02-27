@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/itechart-deploy-test/static/css/main.6d2be8bc.css",
-    "main.js": "/itechart-deploy-test/static/js/main.58e2aae8.js",
+    "main.css": "/itechart-deploy-test/static/css/main.8996dfd2.css",
+    "main.js": "/itechart-deploy-test/static/js/main.e18f91a0.js",
     "index.html": "/itechart-deploy-test/index.html",
-    "main.6d2be8bc.css.map": "/itechart-deploy-test/static/css/main.6d2be8bc.css.map",
-    "main.58e2aae8.js.map": "/itechart-deploy-test/static/js/main.58e2aae8.js.map"
+    "main.8996dfd2.css.map": "/itechart-deploy-test/static/css/main.8996dfd2.css.map",
+    "main.e18f91a0.js.map": "/itechart-deploy-test/static/js/main.e18f91a0.js.map"
   },
   "entrypoints": [
-    "static/css/main.6d2be8bc.css",
-    "static/js/main.58e2aae8.js"
+    "static/css/main.8996dfd2.css",
+    "static/js/main.e18f91a0.js"
   ]
 }
