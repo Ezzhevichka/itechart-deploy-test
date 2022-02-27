@@ -4,7 +4,7 @@ import { signInWithEmailAndPassword, signOut } from 'firebase/auth';
 import firebase from 'firebase/compat/app';
 
 firebase.initializeApp({
-    apiKey: "AIzaSyBvhEt2w5qnyxT-mLif5dA6qOgKDaY6G14",
+    apiKey: process.env.REACT_APP_API_KEY,
     authDomain: "motivational-testing.firebaseapp.com",
     projectId: "motivational-testing",
     storageBucket: "motivational-testing.appspot.com",

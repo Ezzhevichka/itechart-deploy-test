@@ -14,7 +14,7 @@ export default function Routing() {
             <Fragment>
                 <AuthProvieder>
                     <Routes>
-                        <Route exact path="http://Ezzhevichka.github.io/itechart-deploy-test/itechart-deploy-test" element={<Main />} />
+                        <Route exact path="http://Ezzhevichka.github.io/itechart-deploy-test/" element={<Main />} />
                         <Route path="http://Ezzhevichka.github.io/itechart-deploy-test/login" element={<SignIn />} />
                         <Route exact path="http://Ezzhevichka.github.io/itechart-deploy-test/admin" element={<PrivateRoute />}>
                             <Route exact path="http://Ezzhevichka.github.io/itechart-deploy-test/admin" element={<Admin />}>
