@@ -4,15 +4,15 @@ import { signInWithEmailAndPassword, signOut } from 'firebase/auth';
 import firebase from 'firebase/compat/app';
 
 firebase.initializeApp({
-    apiKey: process.env.REACT_APP_API_KEY,
+    apiKey: "AIzaSyBvhEt2w5qnyxT-mLif5dA6qOgKDaY6G14",
     authDomain: "motivational-testing.firebaseapp.com",
     projectId: "motivational-testing",
     storageBucket: "motivational-testing.appspot.com",
     messagingSenderId: "103807964905",
     appId: "1:103807964905:web:c3a077c39cabe92c5d0278",
     measurementId: "G-KCD0KYFG1Q"
-  }
-  );
+}
+);
 
 const AuthContext = React.createContext();
 

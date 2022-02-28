@@ -14,15 +14,15 @@ export default function Routing() {
             <Fragment>
                 <AuthProvieder>
                     <Routes>
-                        <Route exact path="http://Ezzhevichka.github.io/itechart-deploy-test/" element={<Main />} />
-                        <Route path="http://Ezzhevichka.github.io/itechart-deploy-test/login" element={<SignIn />} />
-                        <Route exact path="http://Ezzhevichka.github.io/itechart-deploy-test/admin" element={<PrivateRoute />}>
-                            <Route exact path="http://Ezzhevichka.github.io/itechart-deploy-test/admin" element={<Admin />}>
-                                <Route exact path="http://Ezzhevichka.github.io/itechart-deploy-test/admin/employees" element={<PrivateRoute />}>
-                                    <Route exact path="http://Ezzhevichka.github.io/itechart-deploy-test/admin/employees" element={<Employees />} />
+                        <Route exact path="/itechart-deploy-test/" element={<Main />} />
+                        <Route path="/login" element={<SignIn />} />
+                        <Route exact path="/admin" element={<PrivateRoute />}>
+                            <Route exact path="/admin" element={<Admin />}>
+                                <Route exact path="/admin/employees" element={<PrivateRoute />}>
+                                    <Route exact path="/admin/employees" element={<Employees />} />
                                 </Route>
-                                <Route exact path="http://Ezzhevichka.github.io/itechart-deploy-test/admin/admins" element={<PrivateRoute />}>
-                                    <Route exact path="http://Ezzhevichka.github.io/itechart-deploy-test/admin/admins" element={<Admins />} />
+                                <Route exact path="/admin/admins" element={<PrivateRoute />}>
+                                    <Route exact path="/admin/admins" element={<Admins />} />
                                 </Route>
                             </Route>
                         </Route>
