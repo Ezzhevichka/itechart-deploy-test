@@ -24,7 +24,7 @@ export default function SignIn() {
             if (!res.user) {
                 console.log('error')
             } else {
-                navigate('http://Ezzhevichka.github.io/itechart-deploy-test/admin')
+                navigate('/itechart-deploy-test/admin')
             }
         })
     }

@@ -11,19 +11,19 @@ export default function SideBar() {
 
     function handleLogOut() {
         logOut();
-        navigate('http://Ezzhevichka.github.io/itechart-deploy-test/login')
+        navigate('/itechart-deploy-test/login')
     }
 
     return (
         <section id="sidebar">
             <List component="nav">
                 <ListItem button>
-                    <NavLink id="navLink" exact to="http://Ezzhevichka.github.io/itechart-deploy-test/admin/employees" activeClassName="active">
+                    <NavLink id="navLink" exact to="/itechart-deploy-test/admin/employees" activeClassName="active">
                         <ListItemText primary="Сотрудники" />
                     </NavLink>
                 </ListItem>
                 <ListItem button>
-                    <NavLink id="navLink" exact to="http://Ezzhevichka.github.io/itechart-deploy-test/admin/admins" activeClassName="active">
+                    <NavLink id="navLink" exact to="/itechart-deploy-test/admin/admins" activeClassName="active">
                         <ListItemText primary="Администраторы" />
                     </NavLink>
                 </ListItem>
